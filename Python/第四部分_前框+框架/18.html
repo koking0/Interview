@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name = 'Alex';
+
+    function func() {
+        let name = '007';
+
+        function inner() {
+            alert(name);
+        }
+        return inner;
+    }
+
+    let ret = func();
+    ret();
+</script>
+</body>
+</html>
